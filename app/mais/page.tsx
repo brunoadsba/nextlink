@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Plus, Clock, ArrowLeft, Grid, BookOpen, Users, Target, TrendingUp } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { LOGO_BASE64 } from '@/lib/logoBase64'
 
 export const metadata: Metadata = {
   title: 'Mais Conteúdos - Next Link Pro',
@@ -18,7 +19,7 @@ export default function MaisPage() {
             {/* Logo SESI */}
             <div className="mb-6">
               <img
-                src="/logo_seisi.png"
+                src={`data:image/png;base64,${LOGO_BASE64}`}
                 alt="SESI - Serviço Social da Indústria"
                 width={320}
                 height={88}

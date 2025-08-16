@@ -6,6 +6,7 @@ import { Menu, X, Podcast, Video, FileText, Brain, Settings } from 'lucide-react
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
+import { LOGO_BASE64 } from '@/lib/logoBase64'
 
 const navigation = [
   { name: 'Podcasts', href: '/podcasts', icon: Podcast },
@@ -25,7 +26,7 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <img
-              src="/logo_seisi.png"
+              src={`data:image/png;base64,${LOGO_BASE64}`}
               alt="SESI"
               width={120}
               height={32}
