@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo_seisi.png"
+              src="/logo_seisi.png"
               alt="SESI"
               width={120}
               height={32}

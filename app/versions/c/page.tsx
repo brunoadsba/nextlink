@@ -140,7 +140,7 @@ export default function VersionCPage() {
         <div className="container mx-auto px-4">
           <div className="mb-6">
             <Image
-              src="/images/logo_seisi.png"
+              src="/logo_seisi.png"
               alt="SESI - Serviço Social da Indústria"
               width={320}
               height={88}
