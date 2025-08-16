@@ -17,7 +17,7 @@ export default function CuriosidadesPage() {
           <div className="max-w-4xl mx-auto text-center">
             {/* Logo SESI */}
             <div className="mb-6">
-              <Image
+              <img
                 src="/logo_seisi.png"
                 alt="SESI - Serviço Social da Indústria"
                 width={320}

@@ -24,7 +24,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <Image
+            <img
               src="/logo_seisi.png"
               alt="SESI"
               width={120}
