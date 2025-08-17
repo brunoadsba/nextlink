@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export', // Removido para funcionar no Vercel
-  trailingSlash: true,
+  // Configuração otimizada para Vercel
+  trailingSlash: false, // Vercel prefere sem trailing slash
   images: {
-    unoptimized: true,
+    unoptimized: false, // Habilitar otimização de imagens
+    domains: [],
+    formats: ['image/webp', 'image/avif'],
   },
+  // Headers de segurança
   async headers() {
     return [
       {
@@ -21,6 +24,16 @@ const nextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin',
+          },
+        ],
+      },
+      // Headers específicos para imagens
+      {
+        source: '/images/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
