@@ -27,10 +27,13 @@ export default function VersionBPage() {
             <div className="mb-8 flex justify-center">
               <div className="relative text-center">
                 <div className="mb-6">
-                  <img
+                  <Image
                     src="/images/logo_seisi.png"
                     alt="Logo SESI"
+                    width={240}
+                    height={96}
                     className="mx-auto h-24 w-auto mb-6"
+                    priority
                   />
                 </div>
                 <div className="flex items-center justify-center gap-4 mb-6">

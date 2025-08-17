@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, Podcast, Video, FileText, Brain, Settings } from 'lucide-react'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
@@ -24,10 +25,13 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <img
+            <Image
               src="/images/logo_seisi.png"
               alt="Logo SESI"
+              width={120}
+              height={48}
               className="h-12 w-auto"
+              priority
             />
           </Link>
         </div>

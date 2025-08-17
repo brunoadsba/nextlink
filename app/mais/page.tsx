@@ -18,13 +18,13 @@ export default function MaisPage() {
           <div className="max-w-4xl mx-auto text-center">
             {/* Logo SESI */}
             <div className="mb-6">
-              <img
+              <Image
                 src="/images/logo_seisi.png"
-                alt="SESI - Serviço Social da Indústria"
-                width={320}
-                height={88}
-                className="mx-auto opacity-90 mb-4"
-                style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))' }}
+                alt="Logo SESI"
+                width={240}
+                height={96}
+                className="mx-auto h-24 w-auto mb-6"
+                priority
               />
             </div>
             

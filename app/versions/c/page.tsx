@@ -141,10 +141,11 @@ export default function VersionCPage() {
           <div className="mb-6">
             <Image
               src="/images/logo_seisi.png"
-              alt="SESI - Serviço Social da Indústria"
-              width={320}
-              height={88}
-              className="mx-auto opacity-90"
+              alt="Logo SESI"
+              width={240}
+              height={96}
+              className="mx-auto h-24 w-auto mb-6"
+              priority
             />
           </div>
           <Link2 className="w-8 h-8 mx-auto text-yellow-400 mb-3" />
