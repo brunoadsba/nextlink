@@ -28,7 +28,7 @@ export default function VersionBPage() {
               <div className="relative text-center">
                 <div className="mb-6">
                   <Image
-                    src="/images/logo_seisi.png"
+                    src="/images/sesi.png"
                     alt="Logo SESI"
                     width={240}
                     height={96}
