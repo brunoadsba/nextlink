@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm dark:shadow-gray-800/50 transition-colors duration-300">
-      <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <nav className="container mx-auto px-6 py-6 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
@@ -36,7 +36,7 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-8">
           {navigation.map((item) => {
             const Icon = item.icon
             return (
@@ -44,24 +44,24 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "flex items-center gap-2 text-sm font-medium transition-colors hover:text-emerald-600 dark:text-gray-200 dark:hover:text-emerald-400",
+                  "flex items-center gap-3 text-base font-medium transition-colors hover:text-emerald-600 dark:text-gray-200 dark:hover:text-emerald-400 px-3 py-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800",
                   pathname === item.href
                     ? "text-emerald-600 border-b-2 border-emerald-600 pb-1 dark:text-emerald-400 dark:border-emerald-400"
                     : "text-gray-700 dark:text-gray-200"
                 )}
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="w-5 h-5" />
                 {item.name}
               </Link>
             )
           })}
         </div>
 
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-6">
           <ThemeToggle />
           <Link
             href="/versions"
-            className="bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl"
+            className="bg-emerald-600 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
             Escolher Versão
           </Link>
@@ -70,7 +70,7 @@ export default function Header() {
         <div className="md:hidden">
           <button
             type="button"
-            className="text-gray-700 dark:text-gray-200"
+            className="text-gray-700 dark:text-gray-200 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
@@ -83,8 +83,8 @@ export default function Header() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-200 dark:border-gray-700 py-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md">
-          <div className="space-y-4 px-4">
+        <div className="md:hidden border-t border-gray-200 dark:border-gray-700 py-6 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md">
+          <div className="space-y-6 px-6">
             {navigation.map((item) => {
               const Icon = item.icon
               return (
@@ -92,24 +92,24 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "flex items-center gap-3 text-base font-medium transition-colors",
+                    "flex items-center gap-4 text-lg font-medium transition-colors px-4 py-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800",
                     pathname === item.href
-                      ? "text-emerald-600 dark:text-emerald-400"
+                      ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20"
                       : "text-gray-700 dark:text-gray-200 hover:text-emerald-600 dark:hover:text-emerald-400"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon className="w-6 h-6" />
                   {item.name}
                 </Link>
               )
             })}
-            <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+            <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
               <div className="flex items-center justify-between">
                 <ThemeToggle />
                 <Link
                   href="/versions"
-                  className="bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-emerald-700 transition-colors"
+                  className="bg-emerald-600 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-emerald-700 transition-all duration-300"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Escolher Versão
