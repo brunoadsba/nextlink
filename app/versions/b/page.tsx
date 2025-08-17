@@ -44,7 +44,7 @@ export default function VersionBPage() {
                     alt="Logo SESI"
                     width={280}
                     height={112}
-                    className="mx-auto h-28 w-auto mb-6 relative z-10 drop-shadow-[0_0_20px_rgba(0,255,255,0.5)]"
+                    className="mx-auto h-28 w-auto mb-6 relative z-10 drop-shadow-[0_0_20px_rgba(0,255,255,0.5)] object-contain"
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-full blur-md animate-pulse"></div>

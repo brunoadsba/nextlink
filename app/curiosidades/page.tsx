@@ -23,7 +23,7 @@ export default function CuriosidadesPage() {
                 alt="Logo SESI"
                 width={240}
                 height={96}
-                className="mx-auto h-24 w-auto mb-6"
+                className="mx-auto h-24 w-auto mb-6 object-contain"
                 priority
               />
             </div>

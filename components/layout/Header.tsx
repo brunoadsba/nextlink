@@ -31,7 +31,7 @@ export default function Header() {
               alt="Logo SESI"
               width={120}
               height={48}
-              className="h-12 w-auto"
+              className="h-12 w-auto object-contain"
               priority
             />
           </Link>
