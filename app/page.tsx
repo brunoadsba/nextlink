@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Link2, Brain, Eye, Settings, GraduationCap, Users, Wrench, Lightbulb, TrendingUp, Podcast, Video, HelpCircle, Navigation, Star, Plus, Rocket, ArrowRight } from 'lucide-react'
-import { LOGO_BASE64 } from '@/lib/logoBase64'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Next Link Pro - Inovação e Tecnologia 2025',

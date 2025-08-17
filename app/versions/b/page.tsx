@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Link2, Brain, Cpu, Zap, Sparkles, Rocket, ChevronRight, Star, Play } from 'lucide-react'
 import Image from 'next/image'
 import { realPodcasts, realLives, realArticles, realQuizzes } from '@/lib/data/realContent2025'
-import { LOGO_BASE64 } from '@/lib/logoBase64'
+
 
 export const metadata: Metadata = {
   title: 'Next Link AI - Versão B: IA Tech Futurista',
@@ -28,12 +28,9 @@ export default function VersionBPage() {
               <div className="relative text-center">
                 <div className="mb-6">
                   <img
-                    src={`data:image/png;base64,${LOGO_BASE64}`}
-                    alt="SESI - Serviço Social da Indústria"
-                    width={400}
-                    height={110}
-                    className="mx-auto opacity-90 filter brightness-125"
-                    style={{ filter: 'drop-shadow(0 0 20px rgba(139, 92, 246, 0.3))' }}
+                    src="/images/logo_seisi.png"
+                    alt="Logo SESI"
+                    className="mx-auto h-24 w-auto mb-6"
                   />
                 </div>
                 <div className="flex items-center justify-center gap-4 mb-6">

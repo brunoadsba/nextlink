@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Star, Clock, ArrowLeft, Wrench, Lightbulb, Rocket } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { LOGO_BASE64 } from '@/lib/logoBase64'
+
 
 export const metadata: Metadata = {
   title: 'Curiosidades - Next Link Pro',
@@ -19,7 +19,7 @@ export default function CuriosidadesPage() {
             {/* Logo SESI */}
             <div className="mb-6">
               <img
-                src={`data:image/png;base64,${LOGO_BASE64}`}
+                src="/images/logo_seisi.png"
                 alt="SESI - Serviço Social da Indústria"
                 width={320}
                 height={88}
