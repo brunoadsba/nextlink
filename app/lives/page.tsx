@@ -42,9 +42,9 @@ export default function LivesPage() {
   const endedLives: typeof realLives = [] // Placeholder para lives finalizadas
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-600 to-pink-600 text-white py-16">
+      <section className="bg-gradient-to-r from-slate-600 to-slate-700 text-white py-16">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold serif-font mb-6">
@@ -65,16 +65,16 @@ export default function LivesPage() {
 
       {/* Live Now Section */}
       {liveLives.length > 0 && (
-        <section className="py-12 bg-white">
+        <section className="py-12 bg-white dark:bg-gray-800">
           <div className="container-custom">
-            <h2 className="text-3xl font-bold gradient-text serif-font mb-8 text-center">
+            <h2 className="text-3xl font-bold gradient-text dark:gradient-text-dark serif-font mb-8 text-center">
               🔴 Ao Vivo Agora
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {liveLives.map((live) => {
                 const statusInfo = getStatusInfo(live.status)
                 return (
-                  <div key={live.id} className="bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl overflow-hidden text-white shadow-xl">
+                  <div key={live.id} className="bg-gradient-to-br from-slate-500 to-slate-600 rounded-2xl overflow-hidden text-white shadow-xl">
                     <div className="p-8">
                       <div className="flex items-center gap-2 mb-4">
                         {statusInfo.icon}
@@ -96,7 +96,7 @@ export default function LivesPage() {
                         </div>
                       </div>
                       
-                      <button className="w-full bg-white text-red-600 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
+                      <button className="w-full bg-white text-slate-600 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
                         <Play className="w-5 h-5" />
                         Assistir Ao Vivo
                       </button>
@@ -110,9 +110,9 @@ export default function LivesPage() {
       )}
 
       {/* Scheduled Section */}
-      <section className="py-12">
+      <section className="py-12 bg-white dark:bg-gray-800">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold gradient-text serif-font mb-8 text-center">
+          <h2 className="text-3xl font-bold gradient-text dark:gradient-text-dark serif-font mb-8 text-center">
             📅 Próximas Transmissões
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -121,8 +121,8 @@ export default function LivesPage() {
               const liveDate = new Date(live.scheduledAt)
               
               return (
-                <div key={live.id} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-                  <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center relative">
+                <div key={live.id} className="bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+                  <div className="h-48 bg-gradient-to-br from-slate-500 to-slate-600 flex items-center justify-center relative">
                     <div className="text-white text-center">
                       <Calendar className="w-12 h-12 mx-auto mb-2 opacity-80" />
                       <div className="text-sm opacity-90">AGENDADO PARA</div>
@@ -136,25 +136,25 @@ export default function LivesPage() {
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">
                       {live.title}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">
                       {live.description}
                     </p>
                     
                     <div className="space-y-2 mb-4">
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                         <Calendar className="w-4 h-4" />
                         {liveDate.toLocaleDateString('pt-BR')}
                       </div>
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                         <Clock className="w-4 h-4" />
                         {liveDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })} - {live.duration}
                       </div>
                     </div>
                     
-                    <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                    <button className="w-full bg-slate-600 text-white py-3 rounded-lg hover:bg-slate-700 transition-colors">
                       Definir Lembrete
                     </button>
                   </div>
@@ -166,9 +166,9 @@ export default function LivesPage() {
       </section>
 
       {/* Past Lives Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-gray-50 dark:bg-gray-900">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold gradient-text serif-font mb-8 text-center">
+          <h2 className="text-3xl font-bold gradient-text dark:gradient-text-dark serif-font mb-8 text-center">
             📺 Transmissões Anteriores
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -177,8 +177,8 @@ export default function LivesPage() {
               const liveDate = new Date(live.scheduledAt)
               
               return (
-                <div key={live.id} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-                  <div className="h-48 bg-gradient-to-br from-gray-500 to-gray-700 flex items-center justify-center relative group cursor-pointer">
+                <div key={live.id} className="bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+                  <div className="h-48 bg-gradient-to-br from-slate-500 to-slate-700 flex items-center justify-center relative group cursor-pointer">
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
                       <Play className="w-6 h-6 text-white ml-1" />
                     </div>
@@ -194,10 +194,10 @@ export default function LivesPage() {
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">
                       {live.title}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">
                       {live.description}
                     </p>
                     

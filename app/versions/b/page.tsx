@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function VersionBPage() {
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-cyan-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600">
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-purple-500/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-cyan-500/20 to-transparent rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-indigo-400/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-blue-400/10 to-transparent rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
       {/* Header */}
@@ -37,31 +37,31 @@ export default function VersionBPage() {
                   />
                 </div>
                 <div className="flex items-center justify-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-cyan-400 rounded-full flex items-center justify-center animate-pulse">
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-400 rounded-full flex items-center justify-center animate-pulse">
                     <Brain className="w-8 h-8 text-white" />
                   </div>
-                  <span className="text-purple-300 text-2xl font-bold">×</span>
-                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-pink-400 rounded-full flex items-center justify-center animate-pulse">
+                  <span className="text-indigo-200 text-2xl font-bold">×</span>
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-full flex items-center justify-center animate-pulse">
                     <Link2 className="w-8 h-8 text-white" />
                   </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center animate-bounce">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-bounce">
                   <Zap className="w-4 h-4 text-white" />
                 </div>
               </div>
             </div>
             
             <div className="mb-6">
-              <span className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full text-sm font-bold tracking-wide animate-pulse">
+              <span className="inline-block bg-gradient-to-r from-indigo-500 to-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold tracking-wide animate-pulse">
                 🚀 VERSÃO B - IA TECH FUTURISTA
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 bg-gradient-to-r from-purple-300 via-pink-300 to-cyan-300 bg-clip-text text-transparent serif-font">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 bg-gradient-to-r from-indigo-200 via-blue-200 to-slate-200 bg-clip-text text-transparent serif-font">
               Next Link AI
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl font-light mb-8 text-purple-100">
+            <p className="text-xl md:text-2xl lg:text-3xl font-light mb-8 text-slate-100">
               Superinteligência Artificial • Instituto SESI SST
             </p>
             
@@ -81,7 +81,7 @@ export default function VersionBPage() {
             </div>
             
             <div className="text-center">
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-12 py-4 rounded-2xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <button className="bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white px-12 py-4 rounded-2xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 <Sparkles className="w-6 h-6 inline mr-3" />
                 Explorar o Futuro da IA
               </button>
@@ -91,16 +91,16 @@ export default function VersionBPage() {
       </header>
 
       {/* AI Context Section */}
-      <section className="relative z-10 py-20 bg-black/20 backdrop-blur-sm">
+      <section className="relative z-10 py-20 bg-black/10 backdrop-blur-sm">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white serif-font mb-8">
-                <span className="bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-indigo-200 to-blue-200 bg-clip-text text-transparent">
                   Revolução Cognitiva
                 </span>
               </h2>
-              <p className="text-xl text-purple-100 leading-relaxed">
+              <p className="text-xl text-slate-100 leading-relaxed">
                 Em 2025, a Inteligência Artificial transcendeu suas limitações. Agora, sistemas cognitivos avançados 
                 não apenas processam dados, mas <em>compreendem</em> o mundo industrial com a profundidade 
                 de décadas de experiência humana concentradas em microsegundos de análise.
@@ -108,32 +108,32 @@ export default function VersionBPage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-purple-800/40 to-pink-800/40 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/30">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-indigo-800/40 to-blue-800/40 backdrop-blur-lg rounded-2xl p-8 border border-indigo-500/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
                   <Brain className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Cognição Sintética</h3>
-                <p className="text-purple-100">
+                <p className="text-slate-100">
                   Redes neurais que simulam intuição humana para detectar padrões de risco invisíveis a olho nu.
                 </p>
               </div>
               
-              <div className="bg-gradient-to-br from-cyan-800/40 to-blue-800/40 backdrop-blur-lg rounded-2xl p-8 border border-cyan-500/30">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-blue-800/40 to-indigo-800/40 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
                   <Cpu className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Processamento Quântico</h3>
-                <p className="text-cyan-100">
+                <p className="text-blue-100">
                   Simulações paralelas de milhões de cenários de segurança em superposição quântica.
                 </p>
               </div>
               
-              <div className="bg-gradient-to-br from-pink-800/40 to-purple-800/40 backdrop-blur-lg rounded-2xl p-8 border border-pink-500/30">
-                <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-blue-800/40 to-indigo-800/40 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
                   <Zap className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Predição Temporal</h3>
-                <p className="text-pink-100">
+                <p className="text-blue-100">
                   Algoritmos de IA que antecipam acidentes antes mesmo dos fatores de risco se manifestarem.
                 </p>
               </div>
@@ -148,7 +148,7 @@ export default function VersionBPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white serif-font mb-8">
-                <span className="bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-300 to-indigo-300 bg-clip-text text-transparent">
                   Objetivos Neurais
                 </span>
               </h2>
@@ -156,18 +156,18 @@ export default function VersionBPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="group">
-                <div className="bg-gradient-to-br from-purple-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-300 hover:transform hover:scale-105">
+                <div className="bg-gradient-to-br from-indigo-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:transform hover:scale-105">
                   <div className="relative mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
+                    <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
                       <Brain className="w-10 h-10 text-white" />
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center animate-spin">
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-spin">
                       <Star className="w-4 h-4 text-white" />
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-6 text-center">Sinergia Cognitiva</h3>
-                  <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 p-6 rounded-2xl border border-purple-400/20">
-                    <p className="text-purple-100 text-center leading-relaxed">
+                  <div className="bg-gradient-to-r from-indigo-500/20 to-blue-500/20 p-6 rounded-2xl border border-indigo-400/20">
+                    <p className="text-slate-100 text-center leading-relaxed">
                       Fusão entre inteligência humana e artificial, criando ecossistemas de conhecimento 
                       que evoluem exponencialmente através de feedback neural contínuo.
                     </p>
@@ -176,18 +176,18 @@ export default function VersionBPage() {
               </div>
               
               <div className="group">
-                <div className="bg-gradient-to-br from-cyan-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 hover:transform hover:scale-105">
+                <div className="bg-gradient-to-br from-blue-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-blue-400/30 hover:border-blue-400/60 transition-all duration-300 hover:transform hover:scale-105">
                   <div className="relative mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
                       <Zap className="w-10 h-10 text-white" />
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center animate-bounce">
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center animate-bounce">
                       <Sparkles className="w-4 h-4 text-white" />
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-6 text-center">Visão Aumentada</h3>
-                  <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 p-6 rounded-2xl border border-cyan-400/20">
-                    <p className="text-cyan-100 text-center leading-relaxed">
+                  <div className="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 p-6 rounded-2xl border border-blue-400/20">
+                    <p className="text-blue-100 text-center leading-relaxed">
                       Expansão da percepção através de IA multimodal, permitindo análise simultânea 
                       de múltiplas dimensões de dados para insights impossíveis à cognição humana isolada.
                     </p>
@@ -196,18 +196,18 @@ export default function VersionBPage() {
               </div>
               
               <div className="group md:col-span-2 lg:col-span-1">
-                <div className="bg-gradient-to-br from-pink-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-pink-400/30 hover:border-pink-400/60 transition-all duration-300 hover:transform hover:scale-105">
+                <div className="bg-gradient-to-br from-indigo-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:transform hover:scale-105">
                   <div className="relative mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
+                    <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
                       <Rocket className="w-10 h-10 text-white" />
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center animate-ping">
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-ping">
                       <Play className="w-4 h-4 text-white" />
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-6 text-center">Inovação Disruptiva</h3>
-                  <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 p-6 rounded-2xl border border-pink-400/20">
-                    <p className="text-pink-100 text-center leading-relaxed">
+                  <div className="bg-gradient-to-r from-indigo-500/20 to-blue-500/20 p-6 rounded-2xl border border-indigo-400/20">
+                    <p className="text-blue-100 text-center leading-relaxed">
                       Catalisação de breakthroughs tecnológicos através de IA generativa que não apenas 
                       resolve problemas existentes, mas imagina soluções para desafios ainda não concebidos.
                     </p>
@@ -220,56 +220,56 @@ export default function VersionBPage() {
       </section>
 
       {/* AI-Powered Content Formats */}
-      <section className="relative z-10 py-20 bg-black/20 backdrop-blur-sm">
+      <section className="relative z-10 py-20 bg-black/10 backdrop-blur-sm">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white serif-font mb-8">
-              <span className="bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-200 to-blue-200 bg-clip-text text-transparent">
                 Formatos de IA Imersiva
               </span>
             </h2>
-            <p className="text-xl text-purple-100 mb-16">
+            <p className="text-xl text-slate-100 mb-16">
               Experiências de aprendizado powered by superinteligência artificial
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <a href="/podcasts" className="group">
-                <div className="bg-gradient-to-br from-purple-600/30 to-pink-600/30 backdrop-blur-lg rounded-2xl p-6 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
+                <div className="bg-gradient-to-br from-indigo-600/30 to-blue-600/30 backdrop-blur-lg rounded-2xl p-6 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
                     <Brain className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-bold text-white text-sm">Áudios Neurais</h4>
-                  <p className="text-xs text-purple-200 mt-1">{realPodcasts.length} episódios • IA</p>
+                  <p className="text-xs text-slate-200 mt-1">{realPodcasts.length} episódios • IA</p>
                 </div>
               </a>
               
               <a href="/lives" className="group">
-                <div className="bg-gradient-to-br from-cyan-600/30 to-blue-600/30 backdrop-blur-lg rounded-2xl p-6 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
+                <div className="bg-gradient-to-br from-blue-600/30 to-indigo-600/30 backdrop-blur-lg rounded-2xl p-6 border border-blue-400/30 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
                     <Zap className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-bold text-white text-sm">Transmissões Quânticas</h4>
-                  <p className="text-xs text-cyan-200 mt-1">{realLives.length} eventos • Tempo Real</p>
+                  <p className="text-xs text-blue-200 mt-1">{realLives.length} eventos • Tempo Real</p>
                 </div>
               </a>
               
               <a href="/quizzes" className="group">
-                <div className="bg-gradient-to-br from-pink-600/30 to-purple-600/30 backdrop-blur-lg rounded-2xl p-6 border border-pink-400/30 hover:border-pink-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
+                <div className="bg-gradient-to-br from-indigo-600/30 to-blue-600/30 backdrop-blur-lg rounded-2xl p-6 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
                     <Cpu className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-bold text-white text-sm">Avaliações Neurais</h4>
-                  <p className="text-xs text-pink-200 mt-1">{realQuizzes.length} desafios • Adaptativo</p>
+                  <p className="text-xs text-indigo-200 mt-1">{realQuizzes.length} desafios • Adaptativo</p>
                 </div>
               </a>
               
               <a href="/blog" className="group">
-                <div className="bg-gradient-to-br from-purple-600/30 to-cyan-600/30 backdrop-blur-lg rounded-2xl p-6 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-cyan-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
+                <div className="bg-gradient-to-br from-indigo-600/30 to-blue-600/30 backdrop-blur-lg rounded-2xl p-6 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
                     <Sparkles className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-bold text-white text-sm">Pesquisa em IA</h4>
-                  <p className="text-xs text-purple-200 mt-1">{realArticles.length} artigos • Análises</p>
+                  <p className="text-xs text-slate-200 mt-1">{realArticles.length} artigos • Análises</p>
                 </div>
               </a>
             </div>
@@ -278,16 +278,16 @@ export default function VersionBPage() {
       </section>
 
       {/* Neural Research Highlights */}
-      <section className="relative z-10 py-20 bg-black/30 backdrop-blur-sm">
+      <section className="relative z-10 py-20 bg-black/10 backdrop-blur-sm">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white serif-font mb-8">
-                <span className="bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-indigo-200 to-blue-200 bg-clip-text text-transparent">
                   Descobertas Neurais 2025
                 </span>
               </h2>
-              <p className="text-xl text-purple-100">
+              <p className="text-xl text-slate-100">
                 Insights de vanguarda extraídos de fontes especializadas em IA
               </p>
             </div>
@@ -296,13 +296,13 @@ export default function VersionBPage() {
               {realArticles.slice(0, 3).map((article, index) => (
                 <div 
                   key={article.id} 
-                  className="group bg-gradient-to-br from-purple-800/30 to-pink-800/20 backdrop-blur-lg rounded-3xl p-8 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-300 hover:scale-105"
+                  className="group bg-gradient-to-br from-indigo-800/30 to-blue-800/20 backdrop-blur-lg rounded-3xl p-8 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:scale-105"
                 >
                   <div className="relative mb-6">
                     <div className={`w-16 h-16 bg-gradient-to-br ${
-                      index === 0 ? 'from-purple-500 to-pink-600' : 
-                      index === 1 ? 'from-cyan-500 to-blue-600' : 
-                      'from-pink-500 to-purple-600'
+                      index === 0 ? 'from-indigo-500 to-blue-600' : 
+                      index === 1 ? 'from-blue-500 to-indigo-600' : 
+                      'from-indigo-500 to-blue-600'
                     } rounded-2xl flex items-center justify-center mx-auto group-hover:animate-pulse`}>
                       <Brain className="w-8 h-8 text-white" />
                     </div>
@@ -313,26 +313,26 @@ export default function VersionBPage() {
                   
                   <div className="text-center">
                     <div className="mb-4">
-                      <span className="inline-block bg-purple-500/30 text-purple-200 px-3 py-1 rounded-full text-xs font-medium">
+                      <span className="inline-block bg-indigo-500/30 text-slate-200 px-3 py-1 rounded-full text-xs font-medium">
                         {article.category}
                       </span>
                     </div>
                     
                     <h3 className="text-xl font-bold text-white mb-4 line-clamp-2">{article.title}</h3>
-                    <p className="text-purple-100 text-sm mb-6 line-clamp-3">{article.excerpt}</p>
+                    <p className="text-slate-100 text-sm mb-6 line-clamp-3">{article.excerpt}</p>
                     
-                    <div className="flex items-center justify-between text-xs text-purple-300 mb-4">
+                    <div className="flex items-center justify-between text-xs text-slate-300 mb-4">
                       <span>Por {article.author}</span>
                       <span>{article.readTime}</span>
                     </div>
                     
-                    <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 p-3 rounded-xl border border-purple-400/20 mb-4">
-                      <div className="text-xs text-cyan-300">
+                    <div className="bg-gradient-to-r from-indigo-500/20 to-blue-500/20 p-3 rounded-xl border border-indigo-400/20 mb-4">
+                      <div className="text-xs text-blue-300">
                         Fonte Neural: <a href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="hover:underline font-medium">{article.source}</a>
                       </div>
                     </div>
                     
-                    <div className="flex items-center justify-center gap-4 text-xs text-purple-200">
+                    <div className="flex items-center justify-center gap-4 text-xs text-slate-200">
                       <div className="flex items-center gap-1">
                         <Zap className="w-3 h-3" />
                         {article.views.toLocaleString()}
@@ -349,11 +349,11 @@ export default function VersionBPage() {
             
             <div className="text-center mt-16">
               <div className="mb-6">
-                <p className="text-sm text-purple-300 mb-4">
+                <p className="text-sm text-slate-300 mb-4">
                   <strong>Fontes de Inteligência:</strong> AINEWS • AI News • Reuters Tech • SESI Research
                 </p>
               </div>
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <button className="bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 <Sparkles className="w-5 h-5 inline mr-3" />
                 Explorar Mais Descobertas
                 <ChevronRight className="w-5 h-5 inline ml-3" />
@@ -368,43 +368,43 @@ export default function VersionBPage() {
         <div className="container-custom text-center">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
-              <Rocket className="w-16 h-16 mx-auto text-purple-300 mb-6 animate-bounce" />
+              <Rocket className="w-16 h-16 mx-auto text-indigo-300 mb-6 animate-bounce" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white serif-font mb-8">
-              <span className="bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-200 to-blue-200 bg-clip-text text-transparent">
                 O Futuro é Agora
               </span>
             </h2>
-            <p className="text-xl text-purple-100 mb-12 leading-relaxed">
+            <p className="text-xl text-slate-100 mb-12 leading-relaxed">
               Conectando mentes humanas e artificiais para transcender os limites 
               da segurança ocupacional no Instituto SESI SST
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-                <Brain className="w-10 h-10 mx-auto mb-4 text-purple-300" />
+                <Brain className="w-10 h-10 mx-auto mb-4 text-indigo-300" />
                 <h3 className="font-bold text-white mb-2">Superinteligência</h3>
-                <p className="text-sm text-purple-200">Cognição expandida</p>
+                <p className="text-sm text-slate-200">Cognição expandida</p>
               </div>
               
               <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-                <Cpu className="w-10 h-10 mx-auto mb-4 text-cyan-300" />
+                <Cpu className="w-10 h-10 mx-auto mb-4 text-blue-300" />
                 <h3 className="font-bold text-white mb-2">Quantum Neural</h3>
-                <p className="text-sm text-cyan-200">Processamento infinito</p>
+                <p className="text-sm text-blue-200">Processamento infinito</p>
               </div>
               
               <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-                <Zap className="w-10 h-10 mx-auto mb-4 text-pink-300" />
+                <Zap className="w-10 h-10 mx-auto mb-4 text-indigo-300" />
                 <h3 className="font-bold text-white mb-2">Transcendência</h3>
-                <p className="text-sm text-pink-200">Evolução contínua</p>
+                <p className="text-sm text-indigo-200">Evolução contínua</p>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 transform hover:scale-105">
+              <button className="bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 transform hover:scale-105">
                 Ativar Superinteligência
               </button>
-              <a href="/versions" className="border-2 border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300">
+              <a href="/versions" className="border-2 border-indigo-400 text-indigo-300 hover:bg-indigo-400 hover:text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300">
                 Ver Outras Versões
               </a>
             </div>
@@ -413,18 +413,18 @@ export default function VersionBPage() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 bg-black/40 backdrop-blur-lg text-white py-12 border-t border-white/10">
+      <footer className="relative z-10 bg-black/10 backdrop-blur-lg text-white py-12 border-t border-white/10">
         <div className="container-custom text-center">
           <div className="mb-6">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <Brain className="w-6 h-6 text-white" />
             </div>
-            <h3 className="font-bold text-xl bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent">Next Link AI</h3>
+            <h3 className="font-bold text-xl bg-gradient-to-r from-indigo-200 to-blue-200 bg-clip-text text-transparent">Next Link AI</h3>
           </div>
-          <p className="text-purple-200 mb-4">
+          <p className="text-slate-200 mb-4">
             Superinteligência Artificial • Instituto SESI de SST
           </p>
-          <div className="text-sm text-purple-300">
+          <div className="text-sm text-slate-300">
             Desenvolvido com IA Avançada por Bruno Almeida
           </div>
         </div>
