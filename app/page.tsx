@@ -13,37 +13,37 @@ export default function HomePage() {
   return (
     <main className="theme-transition">
       {/* Header */}
-      <header className="hero-gradient dark:hero-gradient-dark text-white section pt-32 animate-fade-in">
+      <header className="hero-gradient dark:hero-gradient-dark text-white section pt-40">
         <div className="container-custom">
           <div className="text-center">
-            <div className="mb-12 animate-float">
-              <Link2 className="w-20 h-20 mx-auto mb-6 text-emerald-300" />
+            <div className="mb-16 animate-float">
+              <Link2 className="w-24 h-24 mx-auto mb-8 text-emerald-300" />
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold serif-font mb-12 animate-fade-in">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold serif-font mb-16">
               Next Link
             </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl font-light mb-12 max-w-4xl mx-auto px-4 leading-relaxed animate-fade-in">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-light mb-16 max-w-5xl mx-auto px-4 leading-relaxed">
               Inovação e Tecnologia • Instituto SESI de SST
             </p>
-            <div className="inline-flex items-center bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-full px-8 md:px-10 py-4 hover:scale-105 transition-all duration-300">
-              <span className="font-medium text-base md:text-lg">Conectando o futuro hoje</span>
+            <div className="inline-flex items-center bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-full px-10 md:px-12 py-6 hover:scale-105 transition-all duration-300">
+              <span className="font-medium text-lg md:text-xl">Conectando o futuro hoje</span>
             </div>
           </div>
         </div>
       </header>
 
       {/* Contexto */}
-      <section className="section bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-gray-900 dark:to-gray-800 py-24">
+      <section className="section bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-gray-900 dark:to-gray-800 py-32">
         <div className="container-custom">
-          <div className="text-center mb-16 px-4 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text dark:gradient-text-dark serif-font mb-12">
+          <div className="text-center mb-20 px-4 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold gradient-text dark:gradient-text-dark serif-font mb-16">
               Contexto
             </h2>
-            <div className="max-w-5xl mx-auto">
-              <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 mb-8 leading-relaxed">
+            <div className="max-w-6xl mx-auto">
+              <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-200 mb-10 leading-relaxed">
                 Em um mundo cada vez mais conectado, onde novas ideias e avanços tecnológicos moldam o nosso futuro, buscamos contribuir para a ampliação dos seus conhecimentos.
               </p>
-              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 Assim, criamos o <span className="font-bold text-emerald-600 dark:text-emerald-400">Next Link - Inovação e Tecnologia</span> do Instituto SESI de SST, um espaço para compartilhar conteúdos relevantes sobre inovação e tecnologia, em diversos formatos: podcasts, lives, quizzes, trilhas de aprendizagem, curiosidades e muito mais.
               </p>
             </div>
@@ -52,13 +52,13 @@ export default function HomePage() {
       </section>
 
       {/* Proposição do Canal */}
-      <section className="section bg-white dark:bg-gray-900 py-24">
+      <section className="section bg-white dark:bg-gray-900 py-32">
         <div className="container-custom">
-          <div className="text-center mb-16 px-4 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text dark:gradient-text-dark serif-font mb-8">
+          <div className="text-center mb-20 px-4 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold gradient-text dark:gradient-text-dark serif-font mb-12">
               Proposição do Canal
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-5xl mx-auto leading-relaxed">
+            <p className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto leading-relaxed">
               Conectar pessoas no ambiente de trabalho por meio de conteúdos sobre inovação e tecnologia, apresentados em diferentes formatos para inspirar, informar e engajar.
             </p>
           </div>
@@ -66,42 +66,42 @@ export default function HomePage() {
       </section>
 
       {/* Objetivos */}
-      <section className="section bg-gray-50 dark:bg-gray-800 py-24">
+      <section className="section bg-gray-50 dark:bg-gray-800 py-32">
         <div className="container-custom">
-          <div className="text-center mb-16 px-4 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text dark:gradient-text-dark serif-font mb-8">
+          <div className="text-center mb-20 px-4 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold gradient-text dark:gradient-text-dark serif-font mb-12">
               Objetivos
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 px-4">
             <AnimatedCard delay={1}>
-              <div className="icon-container dark:icon-container-dark mx-auto mb-8">
-                <Link2 className="text-white w-8 h-8" />
+              <div className="icon-container dark:icon-container-dark mx-auto mb-10">
+                <Link2 className="text-white w-10 h-10" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">Conexão com a Inovação</h3>
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center">Conexão com a Inovação</h3>
               <div className="highlight-box">
-                <p className="font-medium text-gray-700 dark:text-gray-200 text-base md:text-lg leading-relaxed">Levar conhecimento ao cliente interno do Instituto SESI de SST sobre as principais tendências em inovação e tecnologia nas áreas de atuação.</p>
+                <p className="font-medium text-gray-700 dark:text-gray-200 text-lg md:text-xl leading-relaxed">Levar conhecimento ao cliente interno do Instituto SESI de SST sobre as principais tendências em inovação e tecnologia nas áreas de atuação.</p>
               </div>
             </AnimatedCard>
 
             <AnimatedCard delay={2}>
-              <div className="icon-container dark:icon-container-dark mx-auto mb-8">
-                <Eye className="text-white w-8 h-8" />
+              <div className="icon-container dark:icon-container-dark mx-auto mb-10">
+                <Eye className="text-white w-10 h-10" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">Visão Aprimorada</h3>
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center">Visão Aprimorada</h3>
               <div className="highlight-box">
-                <p className="font-medium text-gray-700 dark:text-gray-200 text-base md:text-lg leading-relaxed">Gerar engajamento por meio de conteúdos que aumentem a capacidade de identificar soluções e aprimorar processos internos.</p>
+                <p className="font-medium text-gray-700 dark:text-gray-200 text-lg md:text-xl leading-relaxed">Gerar engajamento por meio de conteúdos que aumentem a capacidade de identificar soluções e aprimorar processos internos.</p>
               </div>
             </AnimatedCard>
 
             <AnimatedCard delay={3}>
-              <div className="icon-container dark:icon-container-dark mx-auto mb-8">
-                <Settings className="text-white w-8 h-8" />
+              <div className="icon-container dark:icon-container-dark mx-auto mb-10">
+                <Settings className="text-white w-10 h-10" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">Estímulo à Inovação</h3>
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center">Estímulo à Inovação</h3>
               <div className="highlight-box">
-                <p className="font-medium text-gray-700 dark:text-gray-200 text-base md:text-lg leading-relaxed">Incentivar a proposição de soluções incrementais, inovadoras e disruptivas.</p>
+                <p className="font-medium text-gray-700 dark:text-gray-200 text-lg md:text-xl leading-relaxed">Incentivar a proposição de soluções incrementais, inovadoras e disruptivas.</p>
               </div>
             </AnimatedCard>
           </div>

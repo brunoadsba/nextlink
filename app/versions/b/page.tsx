@@ -1,8 +1,7 @@
 import { Metadata } from 'next'
-import { Link2, Brain, Cpu, Zap, Sparkles, Rocket, ChevronRight, Star, Play } from 'lucide-react'
+import { Link2, Brain, Cpu, Zap, Sparkles, Rocket, ChevronRight, Star, Play, Atom, Eye, Shield, Globe, Target, Infinity, Layers, CpuIcon } from 'lucide-react'
 import Image from 'next/image'
 import { realPodcasts, realLives, realArticles, realQuizzes } from '@/lib/data/realContent2025'
-
 
 export const metadata: Metadata = {
   title: 'Next Link AI - Versão B: IA Tech Futurista',
@@ -10,207 +9,271 @@ export const metadata: Metadata = {
 }
 
 export default function VersionBPage() {
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600">
-      {/* Animated Background */}
+    <div className="min-h-screen bg-black relative overflow-hidden">
+      {/* Cyberpunk Background Grid */}
+      <div className="fixed inset-0 bg-[linear-gradient(rgba(0,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+      
+      {/* Floating Particles */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-indigo-400/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-blue-400/10 to-transparent rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-ping opacity-60"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-blue-400 rounded-full animate-pulse opacity-80"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-purple-400 rounded-full animate-bounce opacity-70"></div>
+        <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-green-400 rounded-full animate-ping opacity-60"></div>
+        <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-pink-400 rounded-full animate-pulse opacity-50"></div>
       </div>
 
-      {/* Header */}
-      <header className="relative z-10 py-20 text-white">
+      {/* Holographic Background Effects */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-cyan-500/20 via-blue-500/15 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-pink-500/20 via-purple-500/15 to-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full blur-2xl animate-spin-slow"></div>
+      </div>
+
+      {/* Header Futurista */}
+      <header className="relative z-10 py-32 text-white">
         <div className="container-custom">
-          <div className="text-center max-w-5xl mx-auto">
-            {/* Logo SESI Futurista */}
-            <div className="mb-8 flex justify-center">
-              <div className="relative text-center">
-                <div className="mb-6">
+          <div className="text-center max-w-6xl mx-auto">
+            {/* Logo SESI Holográfico */}
+            <div className="mb-16 flex justify-center">
+              <div className="relative text-center group">
+                <div className="mb-8 relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                   <Image
                     src="/images/sesi.png"
                     alt="Logo SESI"
-                    width={240}
-                    height={96}
-                    className="mx-auto h-24 w-auto mb-6"
+                    width={280}
+                    height={112}
+                    className="mx-auto h-28 w-auto mb-6 relative z-10 drop-shadow-[0_0_20px_rgba(0,255,255,0.5)]"
                     priority
                   />
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-full blur-md animate-pulse"></div>
                 </div>
-                <div className="flex items-center justify-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-400 rounded-full flex items-center justify-center animate-pulse">
-                    <Brain className="w-8 h-8 text-white" />
+                
+                {/* Neural Network Visualization */}
+                <div className="flex items-center justify-center gap-6 mb-8">
+                  <div className="relative">
+                    <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-full flex items-center justify-center animate-pulse shadow-[0_0_30px_rgba(0,255,255,0.6)]">
+                      <Brain className="w-10 h-10 text-white" />
+                    </div>
+                    <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur opacity-30 animate-ping"></div>
                   </div>
-                  <span className="text-indigo-200 text-2xl font-bold">×</span>
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-full flex items-center justify-center animate-pulse">
-                    <Link2 className="w-8 h-8 text-white" />
+                  
+                  <div className="flex flex-col items-center">
+                    <div className="w-1 h-8 bg-gradient-to-b from-cyan-400 to-blue-500 animate-pulse"></div>
+                    <div className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-600 animate-pulse delay-300"></div>
+                  </div>
+                  
+                  <div className="relative">
+                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500 via-pink-500 to-cyan-400 rounded-full flex items-center justify-center animate-pulse shadow-[0_0_30px_rgba(147,51,234,0.6)]">
+                      <Link2 className="w-10 h-10 text-white" />
+                    </div>
+                    <div className="absolute -inset-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur opacity-30 animate-ping delay-500"></div>
                   </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-bounce">
-                  <Zap className="w-4 h-4 text-white" />
+                
+                {/* Quantum State Indicator */}
+                <div className="absolute -top-4 -right-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-400 to-cyan-400 rounded-full flex items-center justify-center animate-spin shadow-[0_0_20px_rgba(34,197,94,0.6)]">
+                    <Atom className="w-6 h-6 text-white" />
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="mb-6">
-              <span className="inline-block bg-gradient-to-r from-indigo-500 to-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold tracking-wide animate-pulse">
+            {/* Badge Futurista */}
+            <div className="mb-8">
+              <span className="inline-block bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 text-white px-8 py-3 rounded-full text-base font-bold tracking-wider animate-pulse shadow-[0_0_20px_rgba(0,255,255,0.5)] border border-cyan-400/30">
                 🚀 VERSÃO B - IA TECH FUTURISTA
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 bg-gradient-to-r from-indigo-200 via-blue-200 to-slate-200 bg-clip-text text-transparent serif-font">
+            {/* Título Holográfico */}
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-12 bg-gradient-to-r from-cyan-300 via-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent serif-font drop-shadow-[0_0_30px_rgba(0,255,255,0.3)] animate-pulse">
               Next Link AI
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl font-light mb-8 text-slate-100">
+            {/* Subtítulo Cyberpunk */}
+            <p className="text-2xl md:text-3xl lg:text-4xl font-light mb-12 text-cyan-100 leading-relaxed">
               Superinteligência Artificial • Instituto SESI SST
             </p>
             
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <div className="bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 text-sm font-medium border border-white/20">
-                <Cpu className="w-4 h-4 inline mr-2" />
+            {/* Tech Tags Futuristas */}
+            <div className="flex flex-wrap justify-center gap-4 mb-16">
+              <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-lg rounded-full px-6 py-3 text-sm font-medium border border-cyan-400/40 shadow-[0_0_15px_rgba(0,255,255,0.3)] hover:shadow-[0_0_25px_rgba(0,255,255,0.5)] transition-all duration-300">
+                <Cpu className="w-4 h-4 inline mr-2 text-cyan-400" />
                 IA Avançada
               </div>
-              <div className="bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 text-sm font-medium border border-white/20">
-                <Brain className="w-4 h-4 inline mr-2" />
+              <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-lg rounded-full px-6 py-3 text-sm font-medium border border-blue-400/40 shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300">
+                <Brain className="w-4 h-4 inline mr-2 text-blue-400" />
                 Redes Neurais
               </div>
-              <div className="bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 text-sm font-medium border border-white/20">
-                <Zap className="w-4 h-4 inline mr-2" />
+              <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-full px-6 py-3 text-sm font-medium border border-purple-400/40 shadow-[0_0_15px_rgba(147,51,234,0.3)] hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] transition-all duration-300">
+                <Zap className="w-4 h-4 inline mr-2 text-purple-400" />
                 Computação Quântica
               </div>
             </div>
             
+            {/* CTA Futurista */}
             <div className="text-center">
-              <button className="bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white px-12 py-4 rounded-2xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                <Sparkles className="w-6 h-6 inline mr-3" />
-                Explorar o Futuro da IA
+              <button className="group relative bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 text-white px-16 py-6 rounded-2xl text-xl font-bold transition-all duration-500 transform hover:scale-110 shadow-[0_0_40px_rgba(0,255,255,0.4)] hover:shadow-[0_0_60px_rgba(0,255,255,0.6)] overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10 flex items-center">
+                  <Sparkles className="w-7 h-7 mr-3 animate-pulse" />
+                  Explorar o Futuro da IA
+                  <ChevronRight className="w-7 h-7 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
+                </div>
               </button>
             </div>
           </div>
         </div>
       </header>
 
-      {/* AI Context Section */}
-      <section className="relative z-10 py-20 bg-black/10 backdrop-blur-sm">
+      {/* AI Context Section - Cyberpunk */}
+      <section className="relative z-10 py-32 bg-gradient-to-b from-black/80 via-cyan-900/20 to-black/80 backdrop-blur-sm">
         <div className="container-custom">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-white serif-font mb-8">
-                <span className="bg-gradient-to-r from-indigo-200 to-blue-200 bg-clip-text text-transparent">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white serif-font mb-12">
+                <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(0,255,255,0.3)]">
                   Revolução Cognitiva
                 </span>
               </h2>
-              <p className="text-xl text-slate-100 leading-relaxed">
+              <p className="text-2xl md:text-3xl text-cyan-100 leading-relaxed max-w-5xl mx-auto">
                 Em 2025, a Inteligência Artificial transcendeu suas limitações. Agora, sistemas cognitivos avançados 
-                não apenas processam dados, mas <em>compreendem</em> o mundo industrial com a profundidade 
-                de décadas de experiência humana concentradas em microsegundos de análise.
+                não apenas processam dados, mas <em className="text-cyan-300 font-semibold">compreendem</em> o mundo industrial com a profundidade 
+                de décadas de experiência humana concentradas em microsegundos de análise quântica.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-indigo-800/40 to-blue-800/40 backdrop-blur-lg rounded-2xl p-8 border border-indigo-500/30">
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
-                  <Brain className="w-8 h-8 text-white" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-gradient-to-br from-cyan-900/40 to-blue-900/40 backdrop-blur-xl rounded-3xl p-10 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-500 hover:scale-105 shadow-[0_0_30px_rgba(0,255,255,0.2)]">
+                  <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-8 shadow-[0_0_25px_rgba(0,255,255,0.4)] group-hover:shadow-[0_0_35px_rgba(0,255,255,0.6)] transition-all duration-500">
+                    <Brain className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-white mb-6">Cognição Sintética</h3>
+                  <p className="text-cyan-100 text-lg leading-relaxed">
+                    Redes neurais que simulam intuição humana para detectar padrões de risco invisíveis a olho nu, 
+                    utilizando processamento quântico paralelo.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Cognição Sintética</h3>
-                <p className="text-slate-100">
-                  Redes neurais que simulam intuição humana para detectar padrões de risco invisíveis a olho nu.
-                </p>
               </div>
               
-              <div className="bg-gradient-to-br from-blue-800/40 to-indigo-800/40 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/30">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                  <Cpu className="w-8 h-8 text-white" />
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-xl rounded-3xl p-10 border border-blue-400/30 hover:border-blue-400/60 transition-all duration-500 hover:scale-105 shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                  <div className="w-20 h-20 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-8 shadow-[0_0_25px_rgba(59,130,246,0.4)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.6)] transition-all duration-500">
+                    <Cpu className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-white mb-6">Processamento Quântico</h3>
+                  <p className="text-blue-100 text-lg leading-relaxed">
+                    Simulações paralelas de milhões de cenários de segurança em superposição quântica, 
+                    com entrelaçamento neural instantâneo.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Processamento Quântico</h3>
-                <p className="text-blue-100">
-                  Simulações paralelas de milhões de cenários de segurança em superposição quântica.
-                </p>
               </div>
               
-              <div className="bg-gradient-to-br from-blue-800/40 to-indigo-800/40 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/30">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                  <Zap className="w-8 h-8 text-white" />
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-xl rounded-3xl p-10 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-500 hover:scale-105 shadow-[0_0_30px_rgba(147,51,234,0.2)]">
+                  <div className="w-20 h-20 bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-8 shadow-[0_0_25px_rgba(147,51,234,0.4)] group-hover:shadow-[0_0_35px_rgba(147,51,234,0.6)] transition-all duration-500">
+                    <Zap className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-white mb-6">Predição Temporal</h3>
+                  <p className="text-purple-100 text-lg leading-relaxed">
+                    Algoritmos de IA que antecipam acidentes antes mesmo dos fatores de risco se manifestarem, 
+                    usando análise preditiva multidimensional.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Predição Temporal</h3>
-                <p className="text-blue-100">
-                  Algoritmos de IA que antecipam acidentes antes mesmo dos fatores de risco se manifestarem.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Neural Objectives */}
-      <section className="relative z-10 py-20">
+      {/* Neural Objectives - Cyberpunk */}
+      <section className="relative z-10 py-32 bg-gradient-to-b from-black/80 via-purple-900/20 to-black/80">
         <div className="container-custom">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-white serif-font mb-8">
-                <span className="bg-gradient-to-r from-blue-300 to-indigo-300 bg-clip-text text-transparent">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white serif-font mb-12">
+                <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(147,51,234,0.3)]">
                   Objetivos Neurais
                 </span>
               </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="group">
-                <div className="bg-gradient-to-br from-indigo-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:transform hover:scale-105">
-                  <div className="relative mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
-                      <Brain className="w-10 h-10 text-white" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-xl rounded-3xl p-10 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-500 hover:scale-105 shadow-[0_0_30px_rgba(0,255,255,0.2)] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/5 to-blue-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="relative mb-10">
+                      <div className="w-24 h-24 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse shadow-[0_0_30px_rgba(0,255,255,0.4)] group-hover:shadow-[0_0_40px_rgba(0,255,255,0.6)] transition-all duration-500">
+                        <Brain className="w-12 h-12 text-white" />
+                      </div>
+                      <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-r from-green-400 to-cyan-400 rounded-full flex items-center justify-center animate-spin shadow-[0_0_20px_rgba(34,197,94,0.6)]">
+                        <Star className="w-5 h-5 text-white" />
+                      </div>
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-spin">
-                      <Star className="w-4 h-4 text-white" />
+                    <h3 className="text-3xl font-bold text-white mb-8 text-center">Sinergia Cognitiva</h3>
+                    <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 p-8 rounded-2xl border border-cyan-400/30 backdrop-blur-lg">
+                      <p className="text-cyan-100 text-center leading-relaxed text-lg">
+                        Fusão entre inteligência humana e artificial, criando ecossistemas de conhecimento 
+                        que evoluem exponencialmente através de feedback neural contínuo e entrelaçamento quântico.
+                      </p>
                     </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-6 text-center">Sinergia Cognitiva</h3>
-                  <div className="bg-gradient-to-r from-indigo-500/20 to-blue-500/20 p-6 rounded-2xl border border-indigo-400/20">
-                    <p className="text-slate-100 text-center leading-relaxed">
-                      Fusão entre inteligência humana e artificial, criando ecossistemas de conhecimento 
-                      que evoluem exponencialmente através de feedback neural contínuo.
-                    </p>
                   </div>
                 </div>
               </div>
               
-              <div className="group">
-                <div className="bg-gradient-to-br from-blue-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-blue-400/30 hover:border-blue-400/60 transition-all duration-300 hover:transform hover:scale-105">
-                  <div className="relative mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
-                      <Zap className="w-10 h-10 text-white" />
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-xl rounded-3xl p-10 border border-blue-400/30 hover:border-blue-400/60 transition-all duration-500 hover:scale-105 shadow-[0_0_30px_rgba(59,130,246,0.2)] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/5 to-purple-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="relative mb-10">
+                      <div className="w-24 h-24 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:shadow-[0_0_40px_rgba(59,130,246,0.6)] transition-all duration-500">
+                        <Zap className="w-12 h-12 text-white" />
+                      </div>
+                      <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center animate-bounce shadow-[0_0_20px_rgba(147,51,234,0.6)]">
+                        <Sparkles className="w-5 h-5 text-white" />
+                      </div>
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center animate-bounce">
-                      <Sparkles className="w-4 h-4 text-white" />
+                    <h3 className="text-3xl font-bold text-white mb-8 text-center">Visão Aumentada</h3>
+                    <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-8 rounded-2xl border border-blue-400/30 backdrop-blur-lg">
+                      <p className="text-blue-100 text-center leading-relaxed text-lg">
+                        Expansão da percepção através de IA multimodal, permitindo análise simultânea 
+                        de múltiplas dimensões de dados para insights impossíveis à cognição humana isolada.
+                      </p>
                     </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-6 text-center">Visão Aumentada</h3>
-                  <div className="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 p-6 rounded-2xl border border-blue-400/20">
-                    <p className="text-blue-100 text-center leading-relaxed">
-                      Expansão da percepção através de IA multimodal, permitindo análise simultânea 
-                      de múltiplas dimensões de dados para insights impossíveis à cognição humana isolada.
-                    </p>
                   </div>
                 </div>
               </div>
               
-              <div className="group md:col-span-2 lg:col-span-1">
-                <div className="bg-gradient-to-br from-indigo-600/20 to-transparent backdrop-blur-lg rounded-3xl p-8 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:transform hover:scale-105">
-                  <div className="relative mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
-                      <Rocket className="w-10 h-10 text-white" />
+              <div className="group md:col-span-2 lg:col-span-1 relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-xl rounded-3xl p-10 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-500 hover:scale-105 shadow-[0_0_30px_rgba(147,51,234,0.2)] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-400/5 to-pink-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="relative mb-10">
+                      <div className="w-24 h-24 bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse shadow-[0_0_30px_rgba(147,51,234,0.4)] group-hover:shadow-[0_0_40px_rgba(147,51,234,0.6)] transition-all duration-500">
+                        <Rocket className="w-12 h-12 text-white" />
+                      </div>
+                      <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-r from-pink-400 to-cyan-400 rounded-full flex items-center justify-center animate-ping shadow-[0_0_20px_rgba(236,72,153,0.6)]">
+                        <Play className="w-5 h-5 text-white" />
+                      </div>
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-ping">
-                      <Play className="w-4 h-4 text-white" />
+                    <h3 className="text-3xl font-bold text-white mb-8 text-center">Inovação Disruptiva</h3>
+                    <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 p-8 rounded-2xl border border-purple-400/30 backdrop-blur-lg">
+                      <p className="text-purple-100 text-center leading-relaxed text-lg">
+                        Catalisação de breakthroughs tecnológicos através de IA generativa que não apenas 
+                        resolve problemas existentes, mas imagina soluções para desafios ainda não concebidos.
+                      </p>
                     </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-6 text-center">Inovação Disruptiva</h3>
-                  <div className="bg-gradient-to-r from-indigo-500/20 to-blue-500/20 p-6 rounded-2xl border border-indigo-400/20">
-                    <p className="text-blue-100 text-center leading-relaxed">
-                      Catalisação de breakthroughs tecnológicos através de IA generativa que não apenas 
-                      resolve problemas existentes, mas imagina soluções para desafios ainda não concebidos.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -219,57 +282,69 @@ export default function VersionBPage() {
         </div>
       </section>
 
-      {/* AI-Powered Content Formats */}
-      <section className="relative z-10 py-20 bg-black/10 backdrop-blur-sm">
+      {/* AI-Powered Content Formats - Holographic */}
+      <section className="relative z-10 py-32 bg-gradient-to-b from-black/80 via-blue-900/20 to-black/80 backdrop-blur-sm">
         <div className="container-custom">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white serif-font mb-8">
-              <span className="bg-gradient-to-r from-indigo-200 to-blue-200 bg-clip-text text-transparent">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white serif-font mb-12">
+              <span className="bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(59,130,246,0.3)]">
                 Formatos de IA Imersiva
               </span>
             </h2>
-            <p className="text-xl text-slate-100 mb-16">
+            <p className="text-2xl md:text-3xl text-blue-100 mb-20 leading-relaxed">
               Experiências de aprendizado powered by superinteligência artificial
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <a href="/podcasts" className="group">
-                <div className="bg-gradient-to-br from-indigo-600/30 to-blue-600/30 backdrop-blur-lg rounded-2xl p-6 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
-                    <Brain className="w-6 h-6 text-white" />
+                <div className="relative bg-gradient-to-br from-cyan-600/30 to-blue-600/30 backdrop-blur-xl rounded-3xl p-8 border border-cyan-400/40 hover:border-cyan-400/70 transition-all duration-500 hover:scale-110 cursor-pointer shadow-[0_0_30px_rgba(0,255,255,0.2)] hover:shadow-[0_0_50px_rgba(0,255,255,0.4)] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse shadow-[0_0_25px_rgba(0,255,255,0.4)] group-hover:shadow-[0_0_35px_rgba(0,255,255,0.6)] transition-all duration-500">
+                      <Brain className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-bold text-white text-lg mb-2">Áudios Neurais</h4>
+                    <p className="text-sm text-cyan-200 mt-2">{realPodcasts.length} episódios • IA</p>
                   </div>
-                  <h4 className="font-bold text-white text-sm">Áudios Neurais</h4>
-                  <p className="text-xs text-slate-200 mt-1">{realPodcasts.length} episódios • IA</p>
                 </div>
               </a>
               
               <a href="/lives" className="group">
-                <div className="bg-gradient-to-br from-blue-600/30 to-indigo-600/30 backdrop-blur-lg rounded-2xl p-6 border border-blue-400/30 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
-                    <Zap className="w-6 h-6 text-white" />
+                <div className="relative bg-gradient-to-br from-blue-600/30 to-purple-600/30 backdrop-blur-xl rounded-3xl p-8 border border-blue-400/40 hover:border-blue-400/70 transition-all duration-500 hover:scale-110 cursor-pointer shadow-[0_0_30px_rgba(59,130,246,0.2)] hover:shadow-[0_0_50px_rgba(59,130,246,0.4)] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-purple-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse shadow-[0_0_25px_rgba(59,130,246,0.4)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.6)] transition-all duration-500">
+                      <Zap className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-bold text-white text-lg mb-2">Transmissões Quânticas</h4>
+                    <p className="text-sm text-blue-200 mt-2">{realLives.length} eventos • Tempo Real</p>
                   </div>
-                  <h4 className="font-bold text-white text-sm">Transmissões Quânticas</h4>
-                  <p className="text-xs text-blue-200 mt-1">{realLives.length} eventos • Tempo Real</p>
                 </div>
               </a>
               
               <a href="/quizzes" className="group">
-                <div className="bg-gradient-to-br from-indigo-600/30 to-blue-600/30 backdrop-blur-lg rounded-2xl p-6 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
-                    <Cpu className="w-6 h-6 text-white" />
+                <div className="relative bg-gradient-to-br from-purple-600/30 to-pink-600/30 backdrop-blur-xl rounded-3xl p-8 border border-purple-400/40 hover:border-purple-400/70 transition-all duration-500 hover:scale-110 cursor-pointer shadow-[0_0_30px_rgba(147,51,234,0.2)] hover:shadow-[0_0_50px_rgba(147,51,234,0.4)] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-400 via-pink-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse shadow-[0_0_25px_rgba(147,51,234,0.4)] group-hover:shadow-[0_0_35px_rgba(147,51,234,0.6)] transition-all duration-500">
+                      <Cpu className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-bold text-white text-lg mb-2">Avaliações Neurais</h4>
+                    <p className="text-sm text-purple-200 mt-2">{realQuizzes.length} desafios • Adaptativo</p>
                   </div>
-                  <h4 className="font-bold text-white text-sm">Avaliações Neurais</h4>
-                  <p className="text-xs text-indigo-200 mt-1">{realQuizzes.length} desafios • Adaptativo</p>
                 </div>
               </a>
               
               <a href="/blog" className="group">
-                <div className="bg-gradient-to-br from-indigo-600/30 to-blue-600/30 backdrop-blur-lg rounded-2xl p-6 border border-indigo-400/30 hover:border-indigo-400/60 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
-                    <Sparkles className="w-6 h-6 text-white" />
+                <div className="relative bg-gradient-to-br from-pink-600/30 to-cyan-600/30 backdrop-blur-xl rounded-3xl p-8 border border-pink-400/40 hover:border-pink-400/70 transition-all duration-500 hover:scale-110 cursor-pointer shadow-[0_0_30px_rgba(236,72,153,0.2)] hover:shadow-[0_0_50px_rgba(236,72,153,0.4)] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-400/10 to-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gradient-to-br from-pink-400 via-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse shadow-[0_0_25px_rgba(236,72,153,0.4)] group-hover:shadow-[0_0_35px_rgba(236,72,153,0.6)] transition-all duration-500">
+                      <Sparkles className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-bold text-white text-lg mb-2">Pesquisa em IA</h4>
+                    <p className="text-sm text-pink-200 mt-2">{realArticles.length} artigos • Análises</p>
                   </div>
-                  <h4 className="font-bold text-white text-sm">Pesquisa em IA</h4>
-                  <p className="text-xs text-slate-200 mt-1">{realArticles.length} artigos • Análises</p>
                 </div>
               </a>
             </div>
