@@ -92,7 +92,6 @@ Thumbs.db
 
 # Gatsby
 .cache/
-public/
 
 # Storybook
 .storybook/
