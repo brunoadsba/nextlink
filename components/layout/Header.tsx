@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, Podcast, Video, FileText, Brain, Settings } from 'lucide-react'
+import { Menu, X, Podcast, Video, FileText, Brain, Settings, CreditCard } from 'lucide-react'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
@@ -14,6 +14,7 @@ const navigation = [
   { name: 'Lives', href: '/lives', icon: Video },
   { name: 'Blog', href: '/blog', icon: FileText },
   { name: 'Quizzes', href: '/quizzes', icon: Brain },
+  { name: 'Cards', href: '/cards', icon: CreditCard },
   { name: 'Versões', href: '/versions', icon: Settings },
 ]
 
@@ -36,7 +37,7 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className="hidden md:flex items-center space-x-10">
+        <div className="hidden md:flex items-center space-x-16">
           {navigation.map((item) => {
             const Icon = item.icon
             return (
@@ -57,14 +58,8 @@ export default function Header() {
           })}
         </div>
 
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-12">
           <ThemeToggle />
-          <Link
-            href="/versions"
-            className="bg-emerald-600 text-white px-8 py-4 rounded-xl text-lg font-medium hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-          >
-            Escolher Versão
-          </Link>
         </div>
 
         <div className="md:hidden">
@@ -105,15 +100,8 @@ export default function Header() {
               )
             })}
             <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-center">
                 <ThemeToggle />
-                <Link
-                  href="/versions"
-                  className="bg-emerald-600 text-white px-8 py-4 rounded-xl text-lg font-medium hover:bg-emerald-700 transition-all duration-300"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Escolher Versão
-                </Link>
               </div>
             </div>
           </div>
