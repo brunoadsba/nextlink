@@ -19,10 +19,10 @@ export default function HomePage() {
             <div className="mb-16 animate-float">
               <Link2 className="w-24 h-24 mx-auto mb-8 text-emerald-300" />
             </div>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold serif-font mb-16">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold serif-font mb-12">
               Next Link
             </h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-light mb-16 max-w-5xl mx-auto px-4 leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl font-light mb-12 max-w-5xl mx-auto px-4 leading-relaxed">
               Inovação e Tecnologia • Instituto SESI de SST
             </p>
             <div className="inline-flex items-center bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-full px-10 md:px-12 py-6 hover:scale-105 transition-all duration-300">
@@ -36,14 +36,14 @@ export default function HomePage() {
       <section className="section bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-gray-900 dark:to-gray-800 py-32">
         <div className="container-custom">
           <div className="text-center mb-20 px-4 animate-fade-in">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold gradient-text dark:gradient-text-dark serif-font mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold gradient-text dark:gradient-text-dark serif-font mb-12">
               Contexto
             </h2>
             <div className="max-w-6xl mx-auto">
-              <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-200 mb-10 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 mb-8 leading-relaxed">
                 Em um mundo cada vez mais conectado, onde novas ideias e avanços tecnológicos moldam o nosso futuro, buscamos contribuir para a ampliação dos seus conhecimentos.
               </p>
-              <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
                 Assim, criamos o <span className="font-bold text-emerald-600 dark:text-emerald-400">Next Link - Inovação e Tecnologia</span> do Instituto SESI de SST, um espaço para compartilhar conteúdos relevantes sobre inovação e tecnologia, em diversos formatos: podcasts, lives, quizzes, trilhas de aprendizagem, curiosidades e muito mais.
               </p>
             </div>
